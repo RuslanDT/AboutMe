@@ -37,6 +37,16 @@
         android:fontFamily="@font/roboto"
         android:text="@string/done" />
 
+    <TextView
+        android:id="@+id/nickname_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:background="@color/colorAccent"
+        android:paddingBottom="@dimen/small_padding" />
+
     <ImageView
         android:id="@+id/star_image"
         style="@style/NameStyle"
