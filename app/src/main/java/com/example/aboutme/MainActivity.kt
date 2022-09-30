@@ -16,13 +16,14 @@ class MainActivity : AppCompatActivity() {
     private val myName: MyName = MyName("Aleks Haecky")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding.myName = myName
+
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding.myName = myName
         binding.doneButton.setOnClickListener {
             addNickname(it)
         }
 
-        findViewById<TextView>(R.id.nickname_text).setOnClickListener {
+        binding.nicknameText.setOnClickListener {
             updateNickname(it)
         }
     }
